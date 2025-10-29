@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+:root {
+  --bg-color: #081b29;
+  --sec-bg-color: #101010;
+  --text-color: white;
+  --main-color: #00abf0;
+}
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  padding: 3rem 15%;
+}
+
+table, tr, th, td{
+  width: 100%;
+  border: 2px solid #2abfe4;
+  border-collapse: collapse;
+  background-color: #0f6689;
+}
