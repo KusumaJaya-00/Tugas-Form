@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Input data Mahasiswa</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section>
-    <h1>Input Data Mahasiswa</h1>
-    <form action="">
-      <label for="nim">NIM:</label><br>
-      <input type="text" placeholder="240040100"><br>
-      <label for="nama">Nama:</label><br>
-      <input type="text" placeholder="Kusuma Jaya"><br>
-      <label for="gender">Gender:</label><br>
-      <input type="radio">Laki-laki
-      <input type="radio">Perempuan<br>
-      <label for="">Tempat Lahir:</label>
-      <select name="" id="">
-        <option value="">Denpasar</option>
-        <option value="">Badung</option>
-        <option value="">Jembrana</option>
-        <option value="">Gianyar</option>
-        <option value="">Buleleng</option>
-        <option value="">Tabanan</option>
-      </select><br>
-      <label for="">Tanggal Lahir:</label><br>
-      <input type="date"><br>
-      <label for="">Alamat:</label><br>
-      <input type="text"><br>
-      <label for="">No. HP:</label><br>
-      <input type="text" required><br>
-      <label for="">Email:</label><br>
-      <input type="email" placeholder="example@email.com" required><br>
-      <label for="">Hobi:</label><br>
-      <input type="checkbox">Belajar<br>
-      <input type="checkbox">Bermain Game<br>
-      <input type="checkbox">Jogging<br>
-      <input type="checkbox">Ngoding<br>
-    </form>
-  </section>
-  <section>
-  <table>
-    <tr>
-      <th colspan="9">Hasil Input Data Mahasiswa</th>
-    </tr>
-    <tr>
-      <th>NIM</th>
-      <th>Nama</th>
-      <th>Gender</th>
-      <th>Tempat Lahir</th>
-      <th>Tanggal Lahir</th>
-      <th>Alamat</th>
-      <th>No. HP</th>
-      <th>Email</th>
-      <th>Hobi</th>
-    </tr>
-    <tr>
-      <td>240040100</td>
-      <td>Kusuma Jaya</td>
-      <td>Laki-laki</td>
-      <td>Denpasar</td>
-      <td>21/11/2005</td>
-      <td>Jalan Danau Toba No 28 Sanur</td>
-      <td>081230934123</td>
-      <td>kusumajaya@gmail.com</td>
-      <td>Belajar, Bermain Game, Ngoding</td>
-    </tr>
-    <tr>
-      <td>240040190</td>
-      <td>Adhiatman</td>
-      <td>Laki-laki</td>
-      <td>Badung</td>
-      <td>13/04/2006</td>
-      <td>Jalan Ahmad Yani No 47</td>
-      <td>08123093243</td>
-      <td>adhiatman@gmail.com</td>
-      <td>Jogging, Bermain Game</td>
-    </tr>
-  </table>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Input Data Mahasiswa</h1>
+      <form action="">
+        <label>NIM:</label><br />
+        <input type="text" placeholder="240040100" required /><br />
+        <label>Nama:</label><br />
+        <input type="text" placeholder="Kusuma Jaya" required /><br />
+        <label>Gender:</label><br />
+        <input type="radio" name="gender" value="Laki-laki" />Laki-laki
+        <input type="radio" name="gender" value="Perempuan" />Perempuan
+        <br />
+        <label required>Tempat Lahir:</label>
+        <select>
+          <option value=""></option>
+          <option value="">Denpasar</option>
+          <option value="">Badung</option>
+          <option value="">Jembrana</option>
+          <option value="">Gianyar</option>
+          <option value="">Buleleng</option>
+          <option value="">Tabanan</option>
+          <option value="">Karangasem</option>
+          <option value="">Bangli</option>
+          <option value="">Klungkung</option></select
+        ><br />
+        <label>Tanggal Lahir:</label><br />
+        <input type="date" required /><br />
+        <label>Alamat:</label><br />
+        <input type="text" required /><br />
+        <label>No. HP:</label><br />
+        <input type="text" required /><br />
+        <label required>Email:</label><br />
+        <input type="email" placeholder="example@email.com" required /><br />
+        <label>Hobi:</label><br />
+        <input type="checkbox" />Belajar<br />
+        <input type="checkbox" />Bermain Game<br />
+        <input type="checkbox" />Jogging<br />
+        <input type="checkbox" />Ngoding<br />
+        <input type="submit" />
+      </form>
+    </section>
+    <section>
+      <table>
+        <tr>
+          <th colspan="9">Hasil Input Data Mahasiswa</th>
+        </tr>
+        <tr>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Gender</th>
+          <th>Tempat Lahir</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+          <th>No. HP</th>
+          <th>Email</th>
+          <th>Hobi</th>
+        </tr>
+        <tr>
+          <td>240040100</td>
+          <td>Kusuma Jaya</td>
+          <td>Laki-laki</td>
+          <td>Denpasar</td>
+          <td>21/11/2005</td>
+          <td>Jalan Danau Toba No 28 Sanur</td>
+          <td>081230934123</td>
+          <td>kusumajaya@gmail.com</td>
+          <td>Belajar, Bermain Game, Ngoding</td>
+        </tr>
+        <tr>
+          <td>240040190</td>
+          <td>Adhiatman</td>
+          <td>Laki-laki</td>
+          <td>Badung</td>
+          <td>13/04/2006</td>
+          <td>Jalan Ahmad Yani No 47</td>
+          <td>08123093243</td>
+          <td>adhiatman@gmail.com</td>
+          <td>Jogging, Bermain Game</td>
+        </tr>
+      </table>
+    </section>
+  </body>
 </html>
