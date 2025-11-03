@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input data Mahasiswa</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
   </head>
   <body>
-    <section>
+    <section class="form-container">
       <h1>Input Data Mahasiswa</h1>
-      <form action="">
-        <label>NIM:</label><br />
-        <input type="text" placeholder="240040100" required /><br />
-        <label>Nama:</label><br />
-        <input type="text" placeholder="Kusuma Jaya" required /><br />
-        <label>Gender:</label><br />
-        <input type="radio" name="gender" value="Laki-laki" />Laki-laki
-        <input type="radio" name="gender" value="Perempuan" />Perempuan
-        <br />
-        <label required>Tempat Lahir:</label>
-        <select>
+      <form action="" class="form-section">
+        <label class="label">NIM:</label>
+        <input
+          class="input-text"
+          type="text"
+          placeholder="240040100"
+          required
+        /><br />
+        <label class="label">Nama:</label>
+        <input
+          class="input-text"
+          type="text"
+          placeholder="Kusuma Jaya"
+          required
+        />
+        <label class="label">Gender:</label>
+        <div class="radio-container">
+          <div class="radio-option">
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Laki-laki"
+            />
+            <label for="">Laki-laki</label>
+          </div>
+          <div class="radio-option">
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Perempuan"
+            />
+            <label for="">Perempuan</label>
+          </div>
+        </div>
+        <label class="label" required>Tempat Lahir:</label>
+        <select class="select-option">
           <option value=""></option>
           <option value="">Denpasar</option>
           <option value="">Badung</option>
@@ -29,28 +59,52 @@
           <option value="">Tabanan</option>
           <option value="">Karangasem</option>
           <option value="">Bangli</option>
-          <option value="">Klungkung</option></select
-        ><br />
-        <label>Tanggal Lahir:</label><br />
-        <input type="date" required /><br />
-        <label>Alamat:</label><br />
-        <input type="text" required /><br />
-        <label>No. HP:</label><br />
-        <input type="text" required /><br />
-        <label required>Email:</label><br />
-        <input type="email" placeholder="example@email.com" required /><br />
-        <label>Hobi:</label><br />
-        <input type="checkbox" />Belajar<br />
-        <input type="checkbox" />Bermain Game<br />
-        <input type="checkbox" />Jogging<br />
-        <input type="checkbox" />Ngoding<br />
-        <input type="submit" />
+          <option value="">Klungkung</option>
+        </select>
+        <label class="label">Tanggal Lahir:</label>
+        <input class="input-date" type="date" required />
+        <label class="label">Alamat:</label>
+        <input class="input-text" type="text" required />
+        <label class="label">No. HP:</label>
+        <input
+          class="input-text"
+          type="text"
+          placeholder="081123123123"
+          required
+        />
+        <label class="label" required>Email:</label>
+        <input
+          class="input-email"
+          type="email"
+          placeholder="example@email.com"
+          required
+        />
+        <label class="label">Hobi:</label>
+        <div class="checkbox-container">
+          <div class="checkbox-option">
+            <input class="input-checkbox" type="checkbox" />
+            <label>Belajar</label>
+          </div>
+          <div class="checkbox-option">
+            <input class="input-checkbox" type="checkbox" />
+            <label>Bermain Game</label>
+          </div>
+          <div class="checkbox-option">
+            <input class="input-checkbox" type="checkbox" />
+            <label>Jogging</label>
+          </div>
+          <div class="checkbox-option">
+            <input class="input-checkbox" type="checkbox" />
+            <label>Ngoding</label>
+          </div>
+        </div>
+        <input class="input-submit" type="submit" />
       </form>
     </section>
-    <section>
+    <section class="table-container">
       <table>
         <tr>
-          <th colspan="9">Hasil Input Data Mahasiswa</th>
+          <th colspan="9" class="judul-table">Hasil Input Data Mahasiswa</th>
         </tr>
         <tr>
           <th>NIM</th>
@@ -81,8 +135,96 @@
           <td>Badung</td>
           <td>13/04/2006</td>
           <td>Jalan Ahmad Yani No 47</td>
-          <td>08123093243</td>
+          <td>081230932473</td>
           <td>adhiatman@gmail.com</td>
+          <td>Jogging, Bermain Game</td>
+        </tr>
+        <tr>
+          <td>240040031</td>
+          <td>Ryan Raditya</td>
+          <td>Laki-laki</td>
+          <td>Denpasar</td>
+          <td>21/03/2006</td>
+          <td>Jalan Tukad Melangit No 23</td>
+          <td>081233413456</td>
+          <td>ryanraditya@gmail.com</td>
+          <td>Jogging</td>
+        </tr>
+        <tr>
+          <td>240040042</td>
+          <td>Siti Nurhaliza</td>
+          <td>Perempuan</td>
+          <td>Gianyar</td>
+          <td>05/08/2005</td>
+          <td>Jalan Raya Teges No 12</td>
+          <td>081298765432</td>
+          <td>sitinurhaliza@example.com</td>
+          <td>Belajar, Ngoding</td>
+        </tr>
+        <tr>
+          <td>240040105</td>
+          <td>Bima Santoso</td>
+          <td>Laki-laki</td>
+          <td>Badung</td>
+          <td>30/01/2006</td>
+          <td>Jalan Melati Indah Blok B/5</td>
+          <td>081234567890</td>
+          <td>bimasantoso@example.com</td>
+          <td>Bermain Game, Jogging</td>
+        </tr>
+        <tr>
+          <td>240040112</td>
+          <td>Putu Aditya</td>
+          <td>Laki-laki</td>
+          <td>Denpasar</td>
+          <td>12/06/2005</td>
+          <td>Jalan Ubud No 10</td>
+          <td>081298765211</td>
+          <td>putu.aditya@example.com</td>
+          <td>Belajar, Ngoding</td>
+        </tr>
+        <tr>
+          <td>240040123</td>
+          <td>Dewi Lestari</td>
+          <td>Perempuan</td>
+          <td>Gianyar</td>
+          <td>25/09/2006</td>
+          <td>Jalan Raya Teges II/7</td>
+          <td>081233344455</td>
+          <td>dewi.lestari@example.com</td>
+          <td>Belajar, Jogging</td>
+        </tr>
+        <tr>
+          <td>240040134</td>
+          <td>Muhammad Irfan</td>
+          <td>Laki-laki</td>
+          <td>Tabanan</td>
+          <td>03/02/2005</td>
+          <td>Perumahan Taman Sari Blok C/2</td>
+          <td>081267891234</td>
+          <td>m.irfan@example.com</td>
+          <td>Ngoding, Bermain Game</td>
+        </tr>
+        <tr>
+          <td>240040156</td>
+          <td>Siska Putri</td>
+          <td>Perempuan</td>
+          <td>Klungkung</td>
+          <td>17/11/2005</td>
+          <td>Jalan Pantai Selatan No 3</td>
+          <td>081245678901</td>
+          <td>siska.putri@example.com</td>
+          <td>Belajar</td>
+        </tr>
+        <tr>
+          <td>240040178</td>
+          <td>Rangga Pratama</td>
+          <td>Laki-laki</td>
+          <td>Bangli</td>
+          <td>09/08/2006</td>
+          <td>Komplek Sinar Mas Blok A/1</td>
+          <td>081276543210</td>
+          <td>rangga.pratama@example.com</td>
           <td>Jogging, Bermain Game</td>
         </tr>
       </table>
